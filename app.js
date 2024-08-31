@@ -20,8 +20,8 @@ app.use('/', indexRouter);
 
 
 app.use('/api', (req, res, next) => {
-    // http://localhost:5173
     res.header('Access-Control-Allow-Origin', 'https://subssum-drab.vercel.app');
+    // res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'POST, OPTIONS, GET, PUT, DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type, Origin, X-Requested-With, Accept, Authorization');
     next();
