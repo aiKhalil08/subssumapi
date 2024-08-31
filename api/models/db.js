@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 
-const dbURI = 'mongodb://localhost/subssum';
-// const dbURI = 'mongodb+srv://aikhalil08:thisbelongstoaikhalil08@cluster0.ekhz8.mongodb.net/subssum?retryWrites=true&w=majority&appName=Cluster0';
+// const dbURI = 'mongodb://localhost/subssum';
+const dbURI = 'mongodb+srv://aikhalil08:thisbelongstoaikhalil08@cluster0.ekhz8.mongodb.net/subssum?retryWrites=true&w=majority&appName=Cluster0';
 mongoose.connect(dbURI);
 
 mongoose.connection.on('connected', () => {
